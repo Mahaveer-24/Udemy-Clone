@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar {
+    text-align: justify;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    gap: 20px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    z-index: 1;
+}
+
+.navbar--s1__title {
+    color: #892DE1;
+    cursor: pointer;
+}
+
+/*this is dropdown menu*/
+.navbar--s2 {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
+}
+.menu--head{
+    cursor: pointer;
+}
+.menu {
+    display: none;
+    position: absolute;
+    background: #eee;
+    text-decoration: none;
+}
+
+.navbar--s4 p:hover,
+.menu--head:hover {
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #892DE1;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar--s4 i:hover {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #48b1db;
+
+}
+
+.navbar--s2:hover .menu {
+    display: block;
+    color: #360069;
+}
+
+.menu div {
+    padding: 8px;
+}
+
+/*this is dropdown menu*/
+
+.navbar--s3 {
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 35px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar--s3 input {
+    font-size: 16px;
+    border: none;
+    width: 90%;
+    background-color: transparent;
+}
+
+.navbar--s3 input:focus {
+    outline: none;
+}
+
+.navbar--s4 {
+
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+/*mylearning popup */
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
+
+/*mylearning popup */
+.categories {
+    display: flex;
+    padding: 10px;
+    border-bottom: solid black 1px;
+    justify-content: space-evenly;
+}
+
+.categories a:link,
+.categories a:visited,
+.categories p {
+    background-color: #a334efff;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    border: solid #a334efff 1px;
+}
+
+.categories a:hover {
+    transition: 1s;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: solid #a334efff 1px;}
+
+/* cover image */
+.cover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+
+}
+
+.cover img {
+    width: 100%;
+    
+    margin-bottom: 30px;
+}
+
+.textbox {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* cover image */
+
+.skill--head,
+.skill--description {
+    padding-left: 25px;
+    
+}
+
+.skill--description {
+    color: rgb(61, 61, 61);
+    font-size: 30;
+}
+
+
+.skill--card1 img,
+.skill--card2 img,
+.skill--card3 img,
+.skill--card4 img,
+.skill--card5 img,
+.skill--card6 img {
+    width: 100%;
+    height: 70%;
+}
+
+.skill--card1,
+.skill--card2,
+.skill--card3,
+.skill--card4,
+.skill--card5,
+.skill--card6 {
+    height: 600px;
+    width: 400px;
+    border: solid black 2px;
+    padding-left: 15px;
+    border-radius: 40px;
+    margin: 30px;
+}
+
+.skill--container {
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.skill--card1:hover,
+.skill--card2:hover,
+.skill--card3:hover,
+.skill--card4:hover,
+.skill--card5:hover,
+.skill--card6:hover {
+    background-color: #892DE1;
+    color: white;
+}
+/*coverimage2*/
+.textbox__2 {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    animation-name: zoom;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.topic--title,
+.topic--subtitle {
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.topic {
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.topic p {
+    margin-top: 10px;
+    padding: 10px;
+    border: solid rgb(92, 89, 89) 2px;
+    gap: 20px;
+    border-radius: 30px;
+    flex-grow: 1;
+    flex-basis: 30%;
+}
+
+.topic p:hover {
+    color: white;
+    background-color: #892DE1;
+}
+
+.course--title {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.course--subtitle {
+    margin-top: 10px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.course--container {
+    padding-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.course--card1,
+.course--card2,
+.course--card3,
+.course--card4,
+.course--card5,
+.course--card6,
+.course--card7,
+.course--card8 {
+    height: 400px;
+    width: 350px;
+    border: solid black 2px;
+    border-radius: 10px;
+}
+
+.course--card1 img,
+.course--card2 img,
+.course--card3 img,
+.course--card4 img,
+.course--card5 img,
+.course--card6 img,
+.course--card7 img,
+.course--card8 img {
+    height: 60%;
+    width: 100%;
+}
+
+.course--card1 h3,
+.course--card2 h3,
+.course--card3 h3,
+.course--card4 h3,
+.course--card5 h3,
+.course--card6 h3,
+.course--card7 h3,
+.course--card8 h3,
+.course--card1 p,
+.course--card2 p,
+.course--card3 p,
+.course--card4 p,
+.course--card5 p,
+.course--card6 p,
+.course--card7 p,
+.course--card8 p {
+    padding-left: 8px;
+    padding-top: 5px;
+}
+
+.course--card1:hover,
+.course--card2:hover,
+.course--card3:hover,
+.course--card4:hover,
+.course--card5:hover,
+.course--card6:hover,
+.course--card7:hover,
+.course--card8:hover {
+    color: white;
+    background-color: #892DE1;
+}
+
+/*Footer*/
+.footer {
+    padding: 30px;
+    background-color: #892DE1;
+}
+
+.footer--one img {
+    height: 60px;
+    width: 55px;
+}
+
+.footer--one {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.footer--one__s1 h3 {
+    padding-right: 25px;
+    text-align: right;
+}
+
+.footer--one__s1 a {
+    color: #d6cae0;
+    text-decoration: none;
+}
+
+.footer--one__s1 a:hover {
+    color: #48b1db;
+}
+
+.footer--two {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.footer--three{
+    display: flex;
+    justify-content: space-between;
+    gap:15px;
+    margin-bottom: 20px ;
+}
+.footer--three p{
+    padding-top: 10px;
+}
+.footer--four{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer--four__s1 img{
+    height: 60px;
+    width: 110px;
+}
+.footer--four__s2 p:hover,
+.footer--four__s3 p:hover
+{
+    background-color: #d6cae0;
+    border-radius: 10px;
+    color: #892DE1;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
